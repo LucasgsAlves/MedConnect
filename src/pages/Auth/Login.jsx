@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import yandexLogo from "../../assets/yandex.svg";
-import mainImage from "../../assets/pexels-kadiravsarr-24877263.jpg";
+import ravenLogin from "../../assets/ravenIcon.png";
+import loginBackground from "../../assets/loginBackground.jpg";
 
 function Login() {
   return (
     <section className="w-full min-h-screen flex flex-col lg:flex-row overflow-y-auto">
+      <div className="hidden lg:flex w-2/5 min-h-screen bg-blue-500 justify-center items-center">
+        <div
+          className="w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${loginBackground})` }}
+        ></div>
+      </div>
       <div className="flex-1 flex flex-col justify-center items-center p-6">
         <div className="container-form-login w-full max-w-md">
           <div className="content-img pb-6 flex justify-center">
-            <img src={yandexLogo} className="w-16 md:w-20" alt="Yandex Logo" />
+            <img src={ravenLogin} className="w-16 md:w-20" alt="Yandex Logo" />
           </div>
 
           <div className="text-container-top pb-6 text-center">
@@ -57,7 +63,7 @@ function Login() {
               </label>
               <Link
                 to="#"
-                className="text-red-500 font-bold transition-all hover:underline"
+                className="text-blue-500 font-bold transition-all hover:underline"
               >
                 Esqueceu a senha?
               </Link>
@@ -66,7 +72,7 @@ function Login() {
             <div className="form-login-button flex justify-center items-center pt-5">
               <button
                 type="submit"
-                className="p-2 w-full font-bold bg-red-400 hover:bg-red-600 text-white rounded-md transition-all duration-300 transform hover:scale-105"
+                className="p-2 w-full font-bold bg-blue-400 hover:bg-blue-600 text-white rounded-md transition-all duration-300 transform hover:scale-105"
               >
                 Login
               </button>
@@ -77,7 +83,7 @@ function Login() {
                 Não possui uma conta?{" "}
                 <Link
                   to="/Register"
-                  className="text-red-500 font-bold hover:underline"
+                  className="text-blue-500 font-bold hover:underline"
                 >
                   Clique aqui
                 </Link>
@@ -85,13 +91,6 @@ function Login() {
             </div>
           </form>
         </div>
-      </div>
-
-      <div className="hidden lg:flex w-2/5 min-h-screen bg-red-500 justify-center items-center">
-        <div
-          className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${mainImage})` }}
-        ></div>
       </div>
     </section>
   );

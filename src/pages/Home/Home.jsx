@@ -1,5 +1,4 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -8,6 +7,8 @@ function Home() {
         <h1 className="text-3xl font-bold">Bem-vindo ao Raven!</h1>
         <Link to="/Login" className="text-red-500">Login</Link>
         <Link to="/Register" className="text-red-500">Cadastrar</Link>
+        <Link to="/TestComponents" className="text-red-500">Testar Components</Link>
+
       </div>
       
     );

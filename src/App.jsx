@@ -1,31 +1,26 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import TitleUpdater from "./components/UI/TitleUpdater";
 import "./styles/global.css";
 import Login from "./pages/Auth/Login";
 import Home from "./pages/Home/Home";
+import Layout from "./components/Layout/Layout";
+import Register from "./pages/Auth/Register"; 
+import TestComponents from "./pages/Extras/TestComponents";
 
-function TitleUpdater() {
-  const location = useLocation();
 
-  React.useEffect(() => {
-    const titles = {
-      "/": "Raven",
-      "/Login": "Login - Raven",
-    };
-
-    document.title = titles[location.pathname] || "Raven";
-  }, [location]);
-
-  return null;
-}
 
 function App() {
   return (
     <BrowserRouter>
-      <TitleUpdater />
+    <TitleUpdater/>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="Login" element={<Login />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="testcomponents" element={<TestComponents />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
