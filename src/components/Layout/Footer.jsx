@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import iconGitHub from "../../assets/icons8-github.svg";
-import iconLinkedin from "../../assets/icons8-linkedin.svg";
+import iconGitHub from "../../assets/github.svg";
+import iconLinkedin from "../../assets/linkedin.svg";
 
 function Footer(){
     return(

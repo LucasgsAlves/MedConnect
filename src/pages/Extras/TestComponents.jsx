@@ -1,8 +1,14 @@
 import React from "react";
-import Footer from "../../components/Layout/Footer";
+import NavBar from "../../components/Layout/NavBar";
 
-const TestComponents = () => {
-  return <h1>Página de TestComponents</h1>;
-};
+function TestComponents() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-between">
+      <NavBar/>
+      <div className="flex-grow">
+      </div>
+    </div>
+  );
+}
 
 export default TestComponents;
