@@ -7,6 +7,9 @@ function Home() {
         <h1 className="text-3xl font-bold">Bem-vindo ao Raven!</h1>
         <Link to="/Login" className="text-red-500">Login</Link>
         <Link to="/Register" className="text-red-500">Cadastrar</Link>
+        <Link to="/Forbidden" className="text-red-500">Forbidden</Link>
+        <Link to="/NotFound" className="text-red-500">NotFound</Link>
+        <Link to="/ServerError" className="text-red-500">ServerError</Link>
       </div>
       
     );
