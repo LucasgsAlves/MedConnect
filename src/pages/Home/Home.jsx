@@ -10,6 +10,9 @@ function Home() {
         <Link to="/Forbidden" className="text-red-500">Forbidden</Link>
         <Link to="/NotFound" className="text-red-500">NotFound</Link>
         <Link to="/ServerError" className="text-red-500">ServerError</Link>
+        <Link to="/About" className="text-red-500">Sobre</Link>
+        <Link to="/Contact" className="text-red-500">Contato</Link>
+        <Link to="/TermsAndConditions" className="text-red-500">Termos</Link>
       </div>
       
     );

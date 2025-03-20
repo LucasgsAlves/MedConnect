@@ -22,7 +22,7 @@ function Footer(){
             <Link to="/help" className="hover:underline text-sm md:text-base">
               Help
             </Link>
-            <Link to="/legal" className="hover:underline text-sm md:text-base">
+            <Link to="/termsandconditions" className="hover:underline text-sm md:text-base">
               Legal
             </Link>
           </div>

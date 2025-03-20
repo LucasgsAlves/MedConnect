@@ -9,6 +9,9 @@ import Register from "./pages/Auth/Register";
 import Forbidden from "./pages/Error/Forbidden";
 import NotFound from "./pages/Error/NotFound";
 import ServerError from "./pages/Error/ServerError";
+import About from "./pages/Extras/About";
+import Contact from "./pages/Extras/Contact";
+import TermsAndConditions from "./pages/Extras/TermsAndConditions";
 
 function App() {
   return (
@@ -16,12 +19,15 @@ function App() {
       <TitleUpdater />
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="forbidden" element={<Forbidden />} />
           <Route path="notfound" element={<NotFound />} />
           <Route path="servererror" element={<ServerError />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="termsandconditions" element={<TermsAndConditions />} />
         </Route>
       </Routes>
     </BrowserRouter>

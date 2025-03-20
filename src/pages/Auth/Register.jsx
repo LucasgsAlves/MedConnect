@@ -30,7 +30,7 @@ function Register() {
                   type="fullname"
                   id="fullname"
                   className="w-full border border-black p-2 text-sm sm:text-lg rounded-xs focus:outline-none 
-                  focus:ring-1"
+                  focus:ring-1 focus:ring-blue-500"
                   placeholder="Nome"
                   required
                 />
@@ -58,7 +58,7 @@ function Register() {
                   type="password"
                   id="password"
                   className="w-full border border-black p-2 text-sm sm:text-lg rounded-xs focus:outline-none 
-                  focus:ring-1"
+                  focus:ring-1 focus:ring-blue-500"
                   placeholder="*********"
                   required
                 />
@@ -72,7 +72,7 @@ function Register() {
                   type="confirm-password"
                   id="confirm-password"
                   className="w-full border border-black p-2 text-sm sm:text-lg rounded-xs focus:outline-none 
-                  focus:ring-1"
+                  focus:ring-1 focus:ring-blue-500"
                   placeholder="*********"
                   required
                 />
@@ -86,7 +86,7 @@ function Register() {
                   type="adress"
                   id="adress"
                   className="w-full border border-black p-2 text-sm sm:text-lg rounded-xs focus:outline-none 
-                  focus:ring-1"
+                  focus:ring-1 focus:ring-blue-500"
                   placeholder="Endereço"
                   required
                 />

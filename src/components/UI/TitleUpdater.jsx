@@ -10,7 +10,12 @@ function TitleUpdater() {
       "/": "Home - MedConnect",
       "/Login": "Login - MedConnect",
       "/Register": "Cadastro - MedConnect",
-      "/TestComponents": "TestComponents - MedConnect",
+      "/About": "Sobre Nós",
+      "/Contact": "Contato",
+      "/TermsAndConditions": "Termos e Condições",
+      "/Forbidden": "Forbidden - 403",
+      "/NotFound": "NotFound - 404",
+      "/ServerError": "ServerError - 500",
     };
 
     document.title = titles[location.pathname] || "MedConnect";

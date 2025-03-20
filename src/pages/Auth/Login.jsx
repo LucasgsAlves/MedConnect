@@ -50,7 +50,8 @@ function Login() {
               <input
                 type="password"
                 id="password"
-                className="w-full border border-gray-300 p-2 text-sm md:text-lg rounded-md focus:outline-none focus:ring-2"
+                className="w-full border border-gray-300 p-2 text-sm md:text-lg rounded-md focus:outline-none focus:ring-2
+                focus:ring-blue-500"
                 placeholder="*********"
                 required
               />
@@ -72,7 +73,8 @@ function Login() {
             <div className="form-login-button flex justify-center items-center pt-5">
               <button
                 type="submit"
-                className="p-2 w-full font-bold bg-blue-400 hover:bg-blue-600 text-white rounded-md transition-all duration-300 transform hover:scale-105"
+                className="p-2 w-full font-bold bg-blue-400 hover:bg-blue-600 text-white hover:cursor-pointer
+                rounded-md transition-all duration-300 transform hover:scale-105 focus:ring-blue-500"
               >
                 Login
               </button>
